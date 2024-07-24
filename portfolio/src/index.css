@@ -1,5 +1,5 @@
 :root {
-  font-family: system-ui;
+  font-family: system-ui, Arial, Helvetica, sans-serif;
   line-height: 0;
   font-weight: 0;
 
@@ -7,6 +7,11 @@
   color: rgba(255, 255, 255, 0.87);
   background-color: #111725;
 
+}
+
+.full-height {
+  min-height: 100vh; /* Ensure container fills the viewport height */
+  background-color: inherit; /* Inherit background color from :root */
 }
 
 a {
@@ -18,24 +23,46 @@ a {
 h1 {
   font-size: 3em;
   line-height: 1.1;
+  color: rgba(255, 255, 255, 0.87);
 }
 
-headerButton {
+h2 {
+  font-size: 2em;
+  line-height: 1.1;
+  color: rgba(255, 255, 255, 0.87);
+  font-weight: 350;
+}
+
+h3 {
+  font-size: 1.5em;
+  line-height: 1.1;
+  color: rgba(255, 255, 255, 0.87);
+  font-weight: 250;
+}
+
+h4 {
+  font-size: 1.2em;
+  line-height: 1.1;
+  color: rgba(255, 255, 255, 0.87);
+  font-weight: 250;
+}
+
+.headerButton {
   font-weight: 300;
   font-size: 1.7em;
   color: #ffffff;
   text-decoration: inherit;
-  padding: 0.2em 0.7em;
+  padding: 0em 0.4em;
   border: 1px solid transparent;
 
 }
 
-headerButton:hover {
+.headerButton:hover {
   font-weight: 300;
   font-size: 1.7em;
   color: #ffffff;
   text-decoration: inherit;
-  padding: 0.2em 0.7em;
+  padding: 0em 0.4em;
   border-radius: 8px;
   border: 1px solid transparent;
   font-family: inherit;
@@ -50,8 +77,9 @@ headerButton:hover {
   --bg-size: 400%;
   --color-one: hsl(240, 89%, 46%);
   --color-two: hsl(178, 95%, 55%);
-  font-family: sans-serif;
+  font-family: system-ui;
   font-size: 5em;
+  font-weight: 600;
   background: linear-gradient(
       90deg,
       var(--color-one),
@@ -61,6 +89,7 @@ headerButton:hover {
     0 0 / var(--bg-size) 100%;
   color: transparent;
   background-clip: text;
+  padding-bottom: 0.15em
 }
 
 @media (prefers-reduced-motion: no-preference) {
