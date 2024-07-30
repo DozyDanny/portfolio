@@ -11,21 +11,21 @@ function PortfolioLayout(props) {
     return (
         <div className="root-container">
             <Container fluid className="full-height" style={{backgroundColor: "#111725"}}>
-                <Row>
-                    <Navbar bg="#111725" sticky="top" variant="dark" expand="sm" style={{ borderBottom: "2px solid #20242e" }}>
-                        <Nav className="mx-auto"> {/* Use mx-auto to center align items */}
-                            <Nav.Link as={Link} to="/"><p className="headerButton">Home</p></Nav.Link>
-                            <Nav.Link as={Link} to="about-me"><p className="headerButton">About Me</p></Nav.Link>
-                            <Nav.Link as={Link} to="projects"><p className="headerButton">Projects</p></Nav.Link>
-                            <Nav.Link as={Link} to="experience"><p className="headerButton">Experience</p></Nav.Link>
-                        </Nav>
-                    </Navbar>
-                </Row>
-                <Row className="justify-content-center"> {/* Center align content */}
-                    <Col sm={12} md={10} lg={8} xl={6}>
-                        <Outlet /> {/* Render nested routes here */}
-                    </Col>
-                </Row>
+                <Navbar bg="#111725" sticky="top" variant="dark" expand="sm" style={{ borderBottom: "2px solid #20242e" }}>
+                    <Nav className="mx-auto"> {/* Use mx-auto to center align items */}
+                        <Nav.Link as={Link} to="/"><p className="headerButton">Home</p></Nav.Link>
+                        <Nav.Link as={Link} to="about-me"><p className="headerButton">About Me</p></Nav.Link>
+                        <Nav.Link as={Link} to="projects"><p className="headerButton">Projects</p></Nav.Link>
+                        <Nav.Link as={Link} to="experience"><p className="headerButton">Experience</p></Nav.Link>
+                    </Nav>
+                </Navbar>
+                <Container style={{overflowY: 'scroll'}}>
+                    <Row className="justify-content-center"> {/* Center align content */}
+                        <Col sm={12} md={10} lg={8} xl={6}>
+                            <Outlet /> {/* Render nested routes here */}
+                        </Col>
+                    </Row>
+                </Container>
             </Container>
         </div>
     );
