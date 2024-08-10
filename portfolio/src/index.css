@@ -47,6 +47,14 @@ h4 {
   font-weight: 250;
 }
 
+li {
+  font-size: 1.1em;
+  line-height: 1.1;
+  color: rgba(255, 255, 255, 0.87);
+  font-weight: 220;
+  padding-bottom: 0.5em
+}
+
 subtitle {
   font-size: 1.1em;
   line-height: 1.1;
@@ -82,7 +90,7 @@ subtitle {
   text-decoration: inherit;
   padding: 0em 0.4em;
   border: 1px solid transparent;
-
+  padding-bottom: 0.2em;
 }
 
 .headerButton:hover {
@@ -97,6 +105,7 @@ subtitle {
   background-color: #0a0e19;
   cursor: pointer;
   transition: background-color 0.6s;
+  padding-bottom: 0.2em;
 }
 
 
@@ -122,7 +131,7 @@ subtitle {
 
 @media (prefers-reduced-motion: no-preference) {
   .boujee-text {
-    animation: move-bg 8s linear infinite;
+    animation: move-bg 12s linear infinite;
   }
   @keyframes move-bg {
     to {
