@@ -5,7 +5,7 @@ import { Row, Col, Button, Card, CardTitle, CardBody, CardImg } from "react-boot
 export default function Projects(props)
 {
     return <>
-        <h1 className="boujee-text">Projects</h1>
+        <h1 className="boujee-text" style={{paddingTop: 40}}>Projects</h1>
         <h3 style={{marginBottom: '0.8em'}}>Games, desktop apps, and other projects I've made over the years. Primarily focused on fun stuff you can play around with!</h3>
         <Row>
             <Col sm={12} md={6} style={{ marginBottom: '1em' }}>
