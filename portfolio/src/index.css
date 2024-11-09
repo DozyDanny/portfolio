@@ -126,7 +126,7 @@ subtitle {
     0 0 / var(--bg-size) 100%;
   color: transparent;
   background-clip: text;
-  padding-bottom: 0.15em
+  padding-bottom: 0.15em;
 }
 
 @media (prefers-reduced-motion: no-preference) {
